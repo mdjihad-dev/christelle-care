@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Christelle Care - Services de beauté, promotions, événements et soins professionnels."
+    />
+    <meta
+      name="keywords"
+      content="soins de beauté, promotions, événements, esthétique, Christelle Care"
+    />
+    <meta name="author" content="Christelle Care" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christelle Care - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header section -->
+    <section class="top-section">
+      <header class="header">
+        <!-- Left: Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="./images/header.svg" alt="Logo Christelle Care" />
+          </a>
+        </div>
+
+        <!-- Right: Three-dot icon -->
+        <button class="menu-toggle" aria-label="Menu">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+
+        <!-- Dropdown Menu -->
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Accueil</a></li>
+            <li><a href="about.html" class="nav-link">À propos</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="promotions.html" class="nav-link">Promotions</a></li>
+            <li><a href="evenements.html" class="nav-link">Événements</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="social-dropdown">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li>
+              <button type="button" class="Header-btn">Réservation</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero section -->
+      <section class="hero" aria-label="Hero Section">
+        <div class="hero-image">
+          <img
+            src="./images/hero.png"
+            alt="Soins esthétiques chez Christelle Care"
+          />
+        </div>
+        <div class="hero-content">
+          <h2>Révélez la beauté qui est en vous</h2>
+          <p>
+            Depuis 1999, au cœur de Duvernay, Laval, notre salon vous offre des
+            soins esthétiques personnalisés qui subliment votre beauté
+            naturelle.
+          </p>
+          <button type="button" class="btn-primary">
+            Prenez rendez-vous en ligne
+          </button>
+        </div>
+      </section>
+    </section>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navbar = document.querySelector(".navbar");
+
+      menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
